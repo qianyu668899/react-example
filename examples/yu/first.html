@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+  </head>
+  <body>
+    <div id="example"></div>
+    <div id="table">
+      <table>
+        <tr>
+          <td id="td0"></td>
+        </tr>
+      </table>
+    </div>
+    <script type="text/jsx">
+      React.render(
+        <h1>Hello, world!</h1>,
+        document.getElementById('example')
+      );
+      React.render(
+        <h1>This is a table!</h1>,
+        document.getElementById('td0')
+      );
+    </script>
+    <script src="../../build/react.js"></script>
+    <script src="../../build/JSXTransformer.js"></script>
+  </body>
+</html>
