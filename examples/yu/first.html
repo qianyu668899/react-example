@@ -10,9 +10,11 @@
       <table>
         <tr>
           <td id="td0"></td>
+          <td id="td1"></td>
         </tr>
       </table>
     </div>
+    <div id="content"></div>
     <script type="text/jsx">
       React.render(
         <h1>Hello, world!</h1>,
@@ -22,8 +24,16 @@
         <h1>This is a table!</h1>,
         document.getElementById('td0')
       );
+      React.render(
+        <h1>This is a table!</h1>,
+        document.getElementById('td1')
+      );
     </script>
     <script src="../../build/react.js"></script>
     <script src="../../build/JSXTransformer.js"></script>
+    <script src="../shared/thirdparty/es5-shim.min.js"></script>
+    <script src="../shared/thirdparty/es5-sham.min.js"></script>
+    <script src="../shared/thirdparty/console-polyfill.js"></script>
+    <script src="my.js"></script>
   </body>
 </html>
